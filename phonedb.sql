@@ -35,6 +35,14 @@ select  person_id,
 from person
 order by person_id asc;
 
+select  person_id,
+        name,
+        hp,
+        company
+from person
+where (name || hp || company) like '%유%'
+order by person_id asc;
+
 -- update문
 update person
 set name = '이정재',
